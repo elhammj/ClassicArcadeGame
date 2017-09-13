@@ -1,0 +1,50 @@
+<!-- 
+	This is the player page which shows 4 different player and allow the user to choose one of them
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Arcade Game Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+</head>
+<body>
+	<!-- Welcome Message -->
+	<h1>Welcome To</h1>
+	<h1>Classic Arcade Game</h1>
+	<!-- Choose the player -->
+	<div id="screenContianer">
+		<canvas id="startScreen" width="505" height="606"></canvas>
+		<script src="js/start.js"></script>
+		<div id="playerContainer">
+			<h1 id="lablePlayer"> Click To Choose</h1>
+			<div class="playerRow">
+			 	<a href="#"><img id="character1" class="player" src="images/char-boy.png" onclick= "drawBorder(this.id);return false;"> </a>
+			 	<a href="#"><img id="character2" class="player" src="images/char-cat-girl.png" onclick= "drawBorder(this.id);return false;"> </a>
+		 	</div>
+		 	<div class="playerRow">
+			 	<a href="#"><img id="character3" class="player" src="images/char-horn-girl.png" onclick= "drawBorder(this.id);return false;"> </a>
+			 	<a href="#"><img id="character4" class="player" src="images/char-princess-girl.png" onclick= "drawBorder(this.id);return false;"> </a>
+		 	</div>
+	 	</div>
+	 	<div class="buttonControl">
+	 		<!-- Start the game -->
+		 	<a href="javascript:next();" id="playButton" data-icon="★" class="button green skew">Play</a>
+		 	<!-- Back to Main Screen -->
+		 	<a href="index.html" data-icon="←" class="button blue skew">Back</a>
+		 	<!-- Mute music and replay -->
+		 	<a href="#" onClick="stopMusic();return false;" data-icon="♫" id="musicButton" class="button orange skew">Music On</a>
+		 </div>
+		 <script type="text/javascript">
+		 //To pass the id of chracter has been chosen by the user
+		 function next(){
+		 	var getLable = document.getElementById("lablePlayer").textContent;
+		 	window.location.href = "game.html?" + getLable;
+		 };
+		 </script>
+ 	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 
+    This page is shown when the time is out and the score less than 15 !
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Game Over !</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+</head>
+<body>
+	<!-- Welcome Message -->
+	<h1>Welcome To</h1>
+	<h1>Classic Arcade Game</h1>
+	<!-- Starting screen with three buttons 1- Start playing 2- Choose the player 3- Mute the music -->
+	<div id="screenContianer">
+		<canvas id="startScreen" width="505" height="606"></canvas>
+		<!-- Play a cheering sounds -->
+		<audio src="sounds/gameOver.wav" autoplay>
+		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+		<embed src="sounds/cheering.wav" width="180" height="90" hidden="true" />
+		</audio>
+		<div id="buttonContainer">
+			<h1>Game Over Try Again !</h1>
+			<!-- Start the game -->
+		 	<div class="buttonOutside"><a href="game.html" data-icon=" ↻" class="button green skew">Retry</a></div>
+		 	<!-- Back to Main Screen -->
+		 	<a href="index.html" data-icon="★" class="button blue skew">Home</a>
+	 	</div>
+ 	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 
+	This is the main file which has a control panl to start the game, off the music or choose a character
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Arcade Game Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+</head>
+<body>
+	<!-- Welcome Message -->
+	<h1>Welcome To</h1>
+	<h1>Classic Arcade Game</h1>
+	<!-- Starting screen with three buttons 1- Start playing 2- Choose the player 3- Mute the music -->
+	<div id="screenContianer">
+		<canvas id="startScreen" width="505" height="606"></canvas>
+		<script src="js/start.js"></script>
+		<div id="buttonContainer">
+			<!-- Start the game -->
+		 	<div class="buttonOutside"><a href="game.html" data-icon="★" class="button green skew">Start Playing</a></div>
+		 	<!-- Choose a player or the computer will choose the default -->
+		 	<div class="buttonOutside"><a href="player.html" data-icon="☻" class="button blue skew">Choose Player</a></div>
+			<!-- Mute music and replay -->
+		 	<div class="buttonOutside"><a href="#" onClick="stopMusic();return false;" data-icon="♫" id="musicButton" class="button orange skew">Music On</a></div>
+	 	</div>
+ 	</div>
+</body>
+</html>
