@@ -1,13 +1,13 @@
 # Classic Arcade Game
 
-* Clone the program and make sure you have all these directories and main files
+* Clone the program and make sure you have all these directories and main files:
     * HTML files: index.html, player.html, game.html, win.html and gameOver.html .
     * Directories: js, css, images and sounds.
 * Once you have all files, click on index.html to start the game screen. 
 
 
 ## Here is the start screen:
-![picture](images/startScreen.png){:height="200px" width="150px"}
+![picture](images/startScreen.png =150x200)
 
 	* Start Playing: allows you to start playing with the default character (little boy). 
 	* Choose Player: allows you to choose one of the four characters and start playing or going back to the start screen.
@@ -15,7 +15,7 @@
 	* Rules: shows you the game rules and describe buttons functions. 
 
 ## Here is the player choices screen:
-![picture](images/playerScreen.png){:height="200px" width="150px"}
+![picture](images/playerScreen.png =150x200)
 
 	* Click on a character, when you see the border has drawn around the character that means you have chosen it. 
 	* Play: allows you to start playing with the character you just chose. 
@@ -23,7 +23,7 @@
 	* Music On/ Off: allows you to mute the introduction music and replay it again. 
 
 ## Here is the game app screen:
-![picture](images/gameScreen.png){:height="200px" width="150px"}
+![picture](images/gameScreen.png =150x200)
 
 	* Home: it is a button allows you to go back to start screen.
 	* Scores: show you current score, if you reach the water without hitting the bugs your score will be increased by 1. 
