@@ -7,7 +7,7 @@
 
 
 ## Here is the start screen:
-![picture](images/startScreen.png =150x200)
+![picture](images/startScreen.png=150x200)
 
 	* Start Playing: allows you to start playing with the default character (little boy). 
 	* Choose Player: allows you to choose one of the four characters and start playing or going back to the start screen.
@@ -15,7 +15,7 @@
 	* Rules: shows you the game rules and describe buttons functions. 
 
 ## Here is the player choices screen:
-![picture](images/playerScreen.png =150x200)
+![picture](images/playerScreen.png=150x200)
 
 	* Click on a character, when you see the border has drawn around the character that means you have chosen it. 
 	* Play: allows you to start playing with the character you just chose. 
@@ -23,7 +23,7 @@
 	* Music On/ Off: allows you to mute the introduction music and replay it again. 
 
 ## Here is the game app screen:
-![picture](images/gameScreen.png =150x200)
+![picture](images/gameScreen.png=150x200)
 
 	* Home: it is a button allows you to go back to start screen.
 	* Scores: show you current score, if you reach the water without hitting the bugs your score will be increased by 1. 
