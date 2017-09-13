@@ -24,8 +24,8 @@ body {
 }
 #buttonContainer{
   position:absolute;
-  left:25%;
-  top:35%;
+  left:23%;
+  top:30%;
   display: block;
   margin: 0 auto;
   z-index: 2;
@@ -81,6 +81,15 @@ body {
   position:absolute;
   left:1%;
   top:70%;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+/* For Win Page*/
+#buttonContainer2{
+  position:absolute;
+  left:0%;
+  top:15%;
   display: block;
   margin: 0 auto;
   z-index: 2;

@@ -1,28 +1,18 @@
 /*
-	For starting screen
+	Name: ELham Jaffar
+	Date: Sep 02, 207
+	File: start.js
+	This is the script which is called by index.html to execute and add functions to the buttons. 
 */
 
-//As a flag to recoginze which character has been selected by the user
-
+//Draw the canvas
 var canvas = document.getElementById("startScreen");
 var ctx = canvas.getContext("2d");
-//drawImg();
 //Play music
 var music = new Audio('sounds/music.wav');
 music.play();
 music.volume = 0.3; //Decrease the volume
 music.loop = true; //auto replay
-/*
-	To draw a screenshot of game
-*/
-function drawImg()
-{
-  gameImage = new Image();
-  gameImage.src = 'images/copy.png';
-  gameImage.onload = function(){
-    ctx.drawImage(gameImage, 170, 10, 170, 220);
-  }
-};
 
 /*
 	To control music on and off
@@ -84,4 +74,9 @@ function removeBorder(){
 	document.getElementById("character4").style.border = "none";
 };
 
-
+/*
+	This method to show a box that has a rules as an alert
+*/
+function showBox(){
+	alert("*Start Screen:\n1- Start playing: play with default character.\n2- Choose player: update the character and click play in order to execute your choice.\n3- Music On/Off: Mute/Replay the introduction music.\n4- Help: For reading game rules.\n\n*Choose Player Screen: \nClick on a specific character.\n1- Play: to start playing with the character you chose.\n2- Music On/Off: Mute/Replay the introduction music.\n3- Back: to go back to start screen and your choice will be dismissed.\n\n*How does the game work?\nWhen you start playing the game, the character can move up, down, right and left. You have 60 Seconds to complete your game and get 10 scores at least. The goal is the character should reach the water without hitting the bugs. Whenever the bug hits you, your score will be decreased by one. If you reach the water, the score will be increased by one. When time is out (60 seconds) and your score equal or greater than 10, that means you win; otherwise you will see the game over screen, do not give up try again!\nGood luck :)");
+};

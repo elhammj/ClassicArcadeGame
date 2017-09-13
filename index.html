@@ -1,5 +1,9 @@
 <!-- 
-	This is the main file which has a control panl to start the game, off the music or choose a character
+	Name: ELham Jaffar
+	Date: Sep 02, 207
+	File: index.html
+	This is the main file which has a control panl to start the game, off the music or choose a character.
+	It is a home page.
 -->
 
 <!DOCTYPE html>
@@ -15,9 +19,10 @@
 	<!-- Welcome Message -->
 	<h1>Welcome To</h1>
 	<h1>Classic Arcade Game</h1>
-	<!-- Starting screen with three buttons 1- Start playing 2- Choose the player 3- Mute the music -->
+	<!-- Starting screen with three buttons 1- Start playing 2- Choose the player 3- Mute the music 4- Rules -->
 	<div id="screenContianer">
 		<canvas id="startScreen" width="505" height="606"></canvas>
+		<!-- Script -->
 		<script src="js/start.js"></script>
 		<div id="buttonContainer">
 			<!-- Start the game -->
@@ -26,7 +31,9 @@
 		 	<div class="buttonOutside"><a href="player.html" data-icon="☻" class="button blue skew">Choose Player</a></div>
 			<!-- Mute music and replay -->
 		 	<div class="buttonOutside"><a href="#" onClick="stopMusic();return false;" data-icon="♫" id="musicButton" class="button orange skew">Music On</a></div>
+		 	<!-- Rules Button to know how to start the game and how to win -->
+		 	<div class="buttonOutside"><a href="#" onClick="showBox();return false;" data-icon="﹖" id="helpButton" class="button green skew">Rules</a></div>
 	 	</div>
- 	</div>
+	</div>
 </body>
 </html>

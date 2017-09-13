@@ -1,6 +1,44 @@
-frontend-nanodegree-arcade-game
-===============================
+#Classic Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+* Clone the program and make sure you have all these directories and main files
+    * HTML files: index.html, player.html, game.html, win.html and gameOver.html .
+    * Directories: js, css, images and sounds.
+* Once you have all files, click on index.html to start the game screen. 
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+
+* Here is the start screen:
+![picture](images/startScreen.png)
+
+	* Start Playing: allows you to start playing with the default character (little boy). 
+	* Choose Player: allows you to choose one of the four characters and start playing or going back to the start screen.
+	* Music On/ Off: allows you to mute the introduction music and replay it again. 
+	* Rules: shows you the game rules and describe buttons functions. 
+
+* Here is the player choices screen:
+![picture](images/playerScreen.png)
+
+	* Click on a character, when you see the border has drawn around the character that means you have chosen it. 
+	* Play: allows you to start playing with the character you just chose. 
+	* Back: allows you to go back to start screen. Note: If you go back to start screen, your choice will be dismissed. 
+	* Music On/ Off: allows you to mute the introduction music and replay it again. 
+
+* Here is the game app screen:
+![picture](images/gameScreen.png)
+
+	* Home: it is a button allows you to go back to start screen.
+	* Scores: show you current score, if you reach the water without hitting the bugs your score will be increased by 1. 
+	* Timer: the timer starts with 60 seconds and when it reaches 0 means Time is out ! You either win or lose. 
+	
+
+* How does the game work?
+
+The game consists of bugs and a character. Bugs are moving with a random speed. The target is the character should reach the water without hitting the bugs. If the character hits the bug and the score greater than 0, the score would be decreased by one. If the character reaches the water safely, the score will be increased by one. 
+	* Win:
+		* When time is out and the score equal to or greater than 10.
+		* The winning screen will show "Congratulations" and allows you to play again. 
+	* Lose:
+		* When time is out and the score less than 10.
+		* The lose screen will show "Game Over" and allows you to retry.
+
+Hop you enjoy playing my game.  
+		 

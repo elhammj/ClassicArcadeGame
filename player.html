@@ -1,5 +1,8 @@
-<!-- 
-	This is the player page which shows 4 different player and allow the user to choose one of them
+<!--
+    Name: ELham Jaffar
+    Date: Sep 02, 207
+    File: gameOver.html
+    This shows 4 different player and allow hte user to select one of them, then send the data to the game page. 
 -->
 
 <!DOCTYPE html>
@@ -18,7 +21,9 @@
 	<!-- Choose the player -->
 	<div id="screenContianer">
 		<canvas id="startScreen" width="505" height="606"></canvas>
-		<script src="js/start.js"></script>
+		<!-- Scripts -->
+		<script src="js/start.js" type="text/javascript"></script>
+		<!-- Draw a border arount the image when the user select it -->
 		<div id="playerContainer">
 			<h1 id="lablePlayer"> Click To Choose</h1>
 			<div class="playerRow">
@@ -38,6 +43,7 @@
 		 	<!-- Mute music and replay -->
 		 	<a href="#" onClick="stopMusic();return false;" data-icon="♫" id="musicButton" class="button orange skew">Music On</a>
 		 </div>
+		 <!-- This script to send the id of the chracter that is chosen by the user to the next page -->
 		 <script type="text/javascript">
 		 //To pass the id of chracter has been chosen by the user
 		 function next(){

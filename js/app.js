@@ -1,14 +1,21 @@
+/*
+    Name: ELham Jaffar
+    Date: Sep 02, 207
+    File: app.js
+    This is the script which is called by game.html and uses by engine.js and resource.js to execute some functions.
+*/
+
 //Variables
 //Starting points for the player (hard coded)
 var strX = 200;
 var strY = 440;
 var score = 0; //Start with zero
-//flag to control sounds playing
+//flag to control sounds playing, when it hits
 var hasHit = false;
 //Making sure the window is loaded
 window.onload = function() {
     document.getElementById("scoreData").innerHTML = score;
-    countDown(30,"timerData");
+    countDown(60,"timerData"); //The player has 60 seconds to win (the score should be greater than or equal 10)
 };
 //Check the player chracter
 function getCharID(str) {
@@ -19,7 +26,6 @@ var chracter = getCharID(window.location.href);//The chracter has already passed
 var Enemy = function(x,y) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
-
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
@@ -103,12 +109,6 @@ Player.prototype.update = function() {
       coinSound.play();
       this.reset(); //Reset the player
     };
-
-    //Check if the score is 15 the player wins
-    if (score === 15){
-
-    }
-
 };
 
 // Draw the player on the screen, required method for game
@@ -173,6 +173,7 @@ var enm4 = new Enemy(-290, 140);
 var allEnemies = [enm1, enm2, enm3, enm4];
 // Place the player object in a variable called player
 var player = new Player(); //Create new player object
+
 /*
     Function to count down the timer, when it reaches 0 time is done !
 */
@@ -180,7 +181,7 @@ function countDown(seconds,element){
     var elm = document.getElementById(element);
     elm.innerHTML = seconds;
     //Game over case
-    if (seconds == 0 && score < 15){ //If the score less than 15, the player lose
+    if (seconds == 0 && score < 10){ //If the score less than 10, the player lose
         elm.innerHTML = "Time Out!"; //time is done
         window.location.href = "gameOver.html"; //move ot game over page
     }
@@ -190,7 +191,7 @@ function countDown(seconds,element){
         var timer = setTimeout('countDown ('+seconds+',"'+element+'")',1000);//Decrease one in a second
     }
     //Winning case
-    if (seconds == 0 && score >= 15){ //If the score greater than 15, the player win
+    if (seconds == 0 && score >= 10){ //If the score greater than 10, the player win
         elm.innerHTML = "You did it!"; //the player win
         window.location.href = "win.html"; //Move to winning page
     }

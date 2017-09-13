@@ -1,5 +1,8 @@
-<!-- 
-    This is the main game page
+<!--
+    Name: ELham Jaffar
+    Date: Sep 02, 207
+    File: game.html
+    This is the main game file.
 -->
 
 <!DOCTYPE html>
@@ -11,16 +14,21 @@
     <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Welcome msg -->
 	<h1>Welcome To</h1>
 	<h1>Classic Arcade Game</h1>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+    <!-- Scripts -->
+    <script src="js/resources.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/engine.js" type="text/javascript"></script>
+    <!-- Extra Icons for timer, score and home button -->
     <div id="add">
-            <div id="back"><a href="index.html"><img class="icon" src="images/home.png"></div></a>
-		    <div id="score"><img class="icon" src="images/coins.png"> <span id="scoreData"></span></div>
-		    <div id="timer"><img class="icon" src="images/clock.png"> <span id="timerData"></span></div>
+            <!-- Home butotn to go back to start screen -->
+            <div id="back"><a href="index.html"><img class="icon" src="images/home.png" alt="home button"></a></div>
+            <!-- Image and span to show the current score -->
+		    <div id="score"><img class="icon" src="images/coins.png" alt="coins"> <span id="scoreData"></span></div>
+            <!-- Image and span to show the timer in seconds -->
+		    <div id="timer"><img class="icon" src="images/clock.png" alt="clock"> <span id="timerData"></span></div>
     </div>
 </body>
 </html>

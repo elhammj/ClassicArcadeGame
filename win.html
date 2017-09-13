@@ -1,12 +1,15 @@
-<!-- 
-    This page is shown when the time is out and the score greater than 15 ! (the player win)
+<!--
+    Name: ELham Jaffar
+    Date: Sep 02, 207
+    File: gameOver.html
+    This is shown when the player win.
 -->
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Congratulations !</title>
+    <title>Congratulations</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button.css">
     <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
@@ -20,11 +23,12 @@
 		<canvas id="startScreen" width="505" height="606"></canvas>
 		<!-- Play a cheering sounds -->
 		<audio src="sounds/cheering.wav" autoplay>
-		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
-		<embed src="sounds/cheering.wav" width="180" height="90" hidden="true" />
+		<p>If you are reading this, it is because your browser does not support the audio element.</p>
+		<embed src="sounds/cheering.wav" width="180" height="90"/>
 		</audio>
-		<div id="buttonContainer">
-			<h1>Congratulations !</h1>
+		<div id="buttonContainer2">
+			<!-- Congrats Image -->
+			<img src="images/congratulations.gif" alt="congrats">
 			<!-- Start the game -->
 		 	<div class="buttonOutside"><a href="game.html" data-icon=" ↻" class="button green skew">Replay</a></div>
 		 	<!-- Back to Main Screen -->
