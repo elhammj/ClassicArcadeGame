@@ -4,6 +4,7 @@
     * HTML files: index.html, player.html, game.html, win.html and gameOver.html .
     * Directories: js, css, images and sounds.
 * Once you have all files, click on index.html to start the game screen. 
+
 [click here to play the game online](https://elhammj.github.io/ClassicArcadeGame/)
 
 ## Here is the start screen:
