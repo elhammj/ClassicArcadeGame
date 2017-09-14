@@ -4,7 +4,8 @@
 	File: start.js
 	This is the script which is called by index.html to execute and add functions to the buttons. 
 */
-
+// Whole-script strict mode syntax
+'use strict';
 //Draw the canvas
 var canvas = document.getElementById("startScreen");
 var ctx = canvas.getContext("2d");

@@ -41,5 +41,5 @@ The game consists of bugs and a character. Bugs are moving with a random speed. 
 	* When time is out and the score less than 10.
 	* The lose screen will show "Game Over" and allows you to retry.
 
-Hop you enjoy playing my game.  
+Hope you enjoy playing my game.  
 		 

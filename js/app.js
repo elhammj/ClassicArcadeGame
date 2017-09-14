@@ -4,11 +4,12 @@
     File: app.js
     This is the script which is called by game.html and uses by engine.js and resource.js to execute some functions.
 */
-
+// Whole-script strict mode syntax
+'use strict';
 //Variables
-//Starting points for the player (hard coded)
-var strX = 200;
-var strY = 440;
+//Starting points for the player (hard coded) - constants
+var STR_X = 200;
+var STR_Y = 440;
 var score = 0; //Start with zero
 //flag to control sounds playing, when it hits
 var hasHit = false;
@@ -48,8 +49,13 @@ Enemy.prototype.update = function(dt) {
     else {
         this.x = -100;
     }
+    //call the checkCollisions function
+    this.checkCollisions();
+};
 
-    //To reset the player whenever hits the bugs
+//For detect the collisions
+Enemy.prototype.checkCollisions = function(){
+     //To reset the player whenever hits the bugs
      if ((this.x - 40 <= player.x &&  this.x + 40 >= player.x) && (this.y - 40 <= player.y && this.y + 40 >= player.y)){
         if (score >0){
             score--; //If score greater than zero, decrease by one
@@ -75,25 +81,23 @@ Enemy.prototype.render = function() {
 var Player = function(){
     //Check the chracter has chosen by the user
     //Set the image for the player
-    if (chracter === "character2")
-    {
+    switch(chracter){
+        case "character2":
         this.sprite = 'images/char-cat-girl.png';
-    }
-    else if (chracter === "character3")
-    {
-        this.sprite = 'images/char-horn-girl.png';
-    }
-    else if (chracter === "character4")
-    {
+        break;
+        case "character3":
+        this.sprite = 'images/char-horn-girl.png'
+        break;
+        case "character4":
         this.sprite = 'images/char-princess-girl.png';
-    }
-    else
-    {
+        break;
+        default:
         this.sprite = 'images/char-boy.png'; //Default
     }
+
     //Set intiale location for the player
-    this.x = strX;
-    this.y = strY;
+    this.x = STR_X;
+    this.y = STR_Y;
 };
 
 // Update the player's position, required method for game (when the player reach the water increase the score and reset the player)
@@ -101,7 +105,7 @@ Player.prototype.update = function() {
    
    //check the player position
    //If the player reach the water, reset the player to its starting point
-    if (player.y < 40){
+    if (this.y < 40){
       score++; //Increase the score by one
       document.getElementById("scoreData").innerHTML = score; //update score
       //Play sound when it hits the bug
@@ -118,8 +122,8 @@ Player.prototype.render = function() {
 
 //To reset the player to its starting point 
 Player.prototype.reset = function(){
-    this.x = strX;
-    this.y = strY;
+    this.x = STR_X;
+    this.y = STR_Y;
 };
 
 //Handle the input for player, when the player move (up, down, left and right)
