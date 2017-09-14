@@ -33,6 +33,7 @@
 ## How does the game work?
 
 The game consists of bugs and a character. Bugs are moving with a random speed. The target is the character should reach the water without hitting the bugs. If the character hits the bug and the score greater than 0, the score would be decreased by one. If the character reaches the water safely, the score will be increased by one. 
+	
 	* Win:
 		* When time is out and the score equal to or greater than 10.
 		* The winning screen will show "Congratulations" and allows you to play again. 
