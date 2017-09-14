@@ -7,7 +7,7 @@
 
 
 ## Here is the start screen:
-![picture](images/startScreen.png=150x200)
+<img src="playerScreen.png" width="40%">
 
 	* Start Playing: allows you to start playing with the default character (little boy). 
 	* Choose Player: allows you to choose one of the four characters and start playing or going back to the start screen.
